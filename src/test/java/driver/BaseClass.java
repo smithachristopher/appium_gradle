@@ -74,6 +74,7 @@ public class BaseClass {
         FileUtils.copyFile(f, new File(folder_name + "/" + file_name));
 
         driver.quit();
+
     }
 }
 
