@@ -1,6 +1,7 @@
 package testNG;
 
-import Driver.BaseClass;
+
+import driver.BaseClass;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
