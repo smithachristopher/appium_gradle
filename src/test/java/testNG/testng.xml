@@ -6,4 +6,6 @@
             </class>
             <class name="testNG.DropdownTest">
             </class>
-        </classes></test></suite>
+        </classes>
+    </test>
+</suite>
