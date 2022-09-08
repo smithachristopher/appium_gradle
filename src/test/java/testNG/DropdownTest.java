@@ -1,10 +1,9 @@
 package testNG;
 
-import Driver.BaseClass;
+
+import driver.BaseClass;
 import io.appium.java_client.MobileElement;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.ElementNotVisibleException;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -12,7 +11,6 @@ import pages.CategoriesPage;
 import pages.DashboardPage;
 import pages.SportsPage;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class DropdownTest extends BaseClass {
