@@ -24,8 +24,7 @@ public class BaseClass {
 
     public AppiumDriver<MobileElement> driver;
     public Properties properties;
-    public final String propertyFilePath= "C:\\Users\\HP\\IdeaProjects\\AppiumProject\\src\\test\\resources\\config.properties";
-
+    public final String propertyFilePath= System.getProperty("user.dir")+"\\resources\\config.properties";
 
     @BeforeTest
     public void setup()throws MalformedURLException ,IOException {
@@ -53,7 +52,7 @@ public class BaseClass {
         cap.setCapability("noReset","true");
 
         //application activity - install apk
-        cap.setCapability("app","C:\\Users\\HP\\Downloads\\APKPure_v3.18.14_apkpure.com.apk");
+        cap.setCapability("app","APKPure_v3.18.14_apkpure.com.apk");
         URL url = new URL("http://127.0.0.1:4723/wd/hub");
         driver = new AndroidDriver<MobileElement>(url , cap);
         System.out.println("Application started");
